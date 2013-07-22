@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <title>mice</title>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	   <meta name="description" content="">
+	   <meta name="author" content="hongchun.li">
+	   <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	   <link href="themes/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+	   <link href="themes/css/register.css" type="text/css" rel="stylesheet"/>
+	   <script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="header"></div>
+  <div class="main">
+  	<div class="logo"><a href="index.html"><img src="themes/images/logo.jpg"></img></a></div>
+  	
+  	<div class="content">
+		  	<h3 style="text-align : center;">系统用户注册</h3>
+		  	    <ul class="nav nav-tabs" id="js-tab-register">
+					    <li id="js-tab-account" class="active"><a href="#">1. 帐户信息</a></li>
+					    <li id="js-tab-success" ><a href="#">2. 注册成功</a></li>
+    				</ul>
+    
+		  	<div class="row-fluid">
+			    <div id="js-tab-account-content" class="span12 content">
+			          <form class="form-horizontal " action="#">
+			              <div class="control-group">
+			               	<label class="control-label">手机号：</label><div class="controls"><input id="username" type="text" class="input-xlarge" placeholder="用户名"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">密码：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="密码"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">重密码：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="重密码"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">(手机短信)验证码：</label><div class="controls"><input id="repassword" type="password" class="input-small" placeholder="验证码"/><button class="btn btn-warning" type="submit">获取短信验证码</button></div>
+			              </div>
+			               <div class="control-group">
+			               		<div class="controls">
+				               		<button id="js-btn-ok" class="btn btn-primary">确认</button>
+				             		</div>
+			            	</div>
+			          </form>
+			    </div>
+			    
+			    <div id="js-tab-success-content" class="content">
+						    <div class="alert alert-success">注册成功 , 您可以</div>
+						    <p><a href="login.html">1.登录到系统</a></p>
+						    <p><a href="vendor-verify.html">2.提交相关材料,申请成为供货商</a></p>
+			    </div>
+			    
+		    </div><!--end of row-fluid -->
+	  </div><!--end of content -->
+	  
+  </div> <!-- /container -->
+	<div class="footer">
+			Copyright (c) 2013 重爻科技有限公司
+  </div>
+  <script type="text/javascript">
+  		$("#js-btn-ok").click(function(){
+  				$("#js-tab-register .active").removeClass("active");
+  				$("#js-tab-success").addClass("active");
+  				$("#js-tab-account-content").hide();
+  				$("#js-tab-success-content").show();
+  		});
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/*layout.css*/
+body {
+	font-family: "Î¢ÈíÑÅºÚ", "Microsoft YaHei", "ËÎÌå", verdana;
+}
+
+.header {
+	border-top: 6px solid #0066CC;
+}
+
+.main {
+	width: 960px;
+	margin: 0px auto;
+	background: white;
+}
+
+.logo {
+	height: 80px;
+	margin-bottom: 20px;
+	background: url("../images/logo.jpg") no-repeat;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.footer {
+	height: 60px;
+	line-height: 60px;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* The white background content wrapper */
+.content {
+	background-color: #ffffff;
+	border: 1px solid #EEEEEE;
+	padding: 20px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+input.input-xlarge {
+	font-size: 14px;
+	padding: 6px;
+}
+
+.checkbox {
+	_width: 20px;
+	*width: 20px;
+}
+
+#js-tab-success-content {
+	display: none;
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content-active {
+	display: block;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	   <title>mice</title>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	   <meta name="description" content="">
+	   <meta name="author" content="hongchun.li">
+	   <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+	   <link href="themes/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+	   <link href="themes/css/register.css" type="text/css" rel="stylesheet"/>
+	   <script type="text/javascript" src="javascript/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="header"></div>
+  <div class="main">
+  	<div class="logo"><a href="index.html"><img src="themes/images/logo.jpg"></img></a></div>
+  	
+  	<div class="content">
+		  	<h3 style="text-align : center;">申请成为供应商</h3>
+		  	    <ul class="nav nav-tabs" id="js-tab-vendor-verify">
+					    <li id="js-tab-basic" class="active"><a href="#">1. 认证信息</a></li>
+					    <li id="js-tab-success" ><a href="#">2. 成功提交</a></li>
+    				</ul>
+    
+		  	<div class="row-fluid" id="js-tab-vendor-verify-content">
+			    <div id="js-tab-basic-content" class="span12 content">
+			          <form class="form-horizontal " action="#">
+			              <div class="control-group">
+			               	<label class="control-label">企业名称：</label><div class="controls"><input id="username" type="text" class="input-xlarge" placeholder="企业名称"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">地址：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="地址"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">电话：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="电话"/></div>
+			              </div>
+			              <div class="control-group">
+			                <label  class="control-label">传真：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="传真"/></div>
+			              </div>		
+			              <div class="control-group">
+			                <label  class="control-label">企业邮箱：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="企业邮箱"/></div>
+			              </div>			          
+			              <div class="control-group">
+			                <label  class="control-label">企业站点：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="企业邮箱"/></div>
+			              </div>				              
+			              <div class="control-group">
+			                <label  class="control-label">营业执照(照片)：</label><div class="controls"><input id="repassword" type="password" class="input-xlarge" placeholder="营业执照"/><button class="btn btn-warning">上传</button></div>
+			              </div>			     
+			               <div class="control-group">
+			               		<div class="controls">
+				               		<button id="js-btn-next" class="btn btn-primary">下一步</button>
+				             		</div>
+			            	</div>
+			          </form>
+			    </div>
+			    			    
+			    <div id="js-tab-success-content" class="content" style="display : none;">
+						    <div class="alert alert-success">成功提交申请,管理人员会在3个工作日内以短信或邮件等方式进行回复...</div>
+						    <p><a href="login.html">1.进入系统</a></p>
+			    </div>
+			    
+		    </div><!--end of row-fluid -->
+	  </div><!--end of content -->
+	  
+  </div> <!-- /container -->
+	<div class="footer">
+			Copyright (c) 2013 重爻科技有限公司
+  </div>
+  <script type="text/javascript">
+  	
+  		$("#js-btn-next").click(function(){
+  				var tabs = $("#js-tab-vendor-verify").children();
+  				var curActived = $("#js-tab-vendor-verify .active").get(0);
+  				for(var i = 0 , len = tabs.length ; i < len ; i ++){
+  						if(curActived === tabs[i] ){
+  							var nextTab = $("#js-tab-vendor-verify").children().get(i + 1);
+  							var nextContent = $("#js-tab-vendor-verify-content").children().get(i + 1);
+
+  							if(nextTab){
+  								$(curActived).removeClass("active");
+  								$("#" + curActived["id"] + "-content").css("display" , "none");
+  								
+  								 $(nextTab).addClass("active");
+  								 $(nextContent).show();
+  							}
+  							break;
+  						}
+  				}
+  		});
+  		
+
+  </script>
+</body>
+</html>

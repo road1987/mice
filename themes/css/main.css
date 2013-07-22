@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*layout.css*/
+html {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:90px 0px 50px 0px;
+    overflow:hidden;
+}
+html, body {
+    height:100%;
+    font-family: "Î¢ÈíÑÅºÚ", "Microsoft YaHei", "ËÎÌå", verdana;
+}
+
+#header {
+	position:relative;
+  top:-90px;
+	width : 100%;
+	height : 80px;	
+	1background : #EEEEEE;
+	border-bottom : 2px solid  #0066cc;	
+	border-top : 6px solid #0066cc;
+}
+
+#main {
+	position : relative;
+	top : -90px;
+	height : 100%;
+	margin : 10px 20px;
+}
+
+#sidebar-left {
+	position : absolute;
+	width : 300px;
+	height : 100%;
+	background : #DDDDDD;
+	top : 0px;
+	left : 0px;
+}
+
+#mainContent {
+	margin : 0px 0px 0px 310px;
+	height : 100%;
+	background : #DDDDDD;
+}
+
+#siderbar-right {
+	position : absolute;
+	width : 210px;
+	height : 100%;
+	top : 0px;
+	right : 0px;	
+	background : #DDDDDD;
+}
+
+#footer {
+  position:relative;
+  top:-90px;
+	width : 100%;
+	height : 40px;
+	background : #EEEEEE;
+	text-align : center;
+	line-height : 30px;
+	font-size : 12px;
+}
+
+
+/*logo*/
+#logo{
+	height : 80px;
+	background : url("../images/logo.jpg") no-repeat;	
+}
+
+/*nav*/
+#nav-main {
+	margin-top : 40px;	
+}
